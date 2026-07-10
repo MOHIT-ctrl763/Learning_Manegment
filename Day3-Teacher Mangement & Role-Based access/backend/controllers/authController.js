@@ -26,7 +26,8 @@ const setupAdmin = async (req, res, next) => {
     }
 
     // Create the new administrator
-    const newAdmin = await User.create({
+    const newAdmin = await U
+    ser.create({
       fullName,
       email,
       password, // hashed automatically in model pre-save hook

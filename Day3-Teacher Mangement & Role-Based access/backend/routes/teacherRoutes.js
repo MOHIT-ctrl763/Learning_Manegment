@@ -10,6 +10,7 @@ const {
 const { authMiddleware, restrictTo } = require('../middleware/authMiddleware');
 
 // Protect all routes: Request -> authMiddleware -> restrictTo('admin')
+
 router.use(authMiddleware);
 router.use(restrictTo('admin'));
 
